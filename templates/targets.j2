@@ -1,0 +1,4 @@
+- targets:
+   {% for svc in services -%}
+       - tcp_connect,{{ svc }}:{{ port }}
+   {% endfor %}
